@@ -1,9 +1,15 @@
 .navbar {
+    margin-bottom: 0;
+    background-color: $white;
     .navbar-header {
         h1 {
             @include font-size(14, 10);
             margin-top: 0.5rem;
             margin-bottom: 0;
+        }
+
+        .navbar-brand {
+            height: auto;
         }
     }
 

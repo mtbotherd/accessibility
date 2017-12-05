@@ -4,17 +4,68 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto:700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
-    <title>Accessibility Testing | A Place to Play</title>
+    <title>The Accessibility Playground</title>
 </head>
 
 <body>
-    <a href="#main">Skip to main content</a>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="The accessibilty playground. A place to play.">The Accessibility Playground</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#main">Skip to main content</a></li>
+                    <li class="active"><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li><a href="#section4">Section 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <div class="container">
+            </div>
+        </div>
+    </header>
 
     <main id="main">
-
+        <div class="container">
+            <section aria-labelledby="section1">
+                <h2 id="section1">Heading 1</h2>
+                <p>This is a test of section 1 content.</p>
+            </section>
+            <hr />
+            <section aria-labelledby="section2">
+                <h2 id="section2">Heading 2</h2>
+                <p>This is a test of section 2 content.</p>
+            </section>
+            <hr />
+            <section aria-labelledby="section3">
+                <h2 id="section3">Heading 3</h2>
+                <p>This is a test of section 3 content.</p>
+            </section>
+            <hr />
+            <section aria-labelledby="section4">
+                <h2 id="section4">Heading 4</h2>
+                <p>This is a test of section 4 content.</p>
+            </section>
+        </div>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

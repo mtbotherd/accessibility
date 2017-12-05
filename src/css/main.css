@@ -4769,16 +4769,20 @@ button.close {
         Must have Mixins
         http://w3bits.com/sass-mixins/
 ############################################*/
-.navbar .navbar-header h1 {
-  font-size: 14;
-  font-size: 1.4em;
-  margin-top: 0.5rem;
-  margin-bottom: 0; }
-
-.navbar .navbar-nav [href="#main"] {
-  color: transparent; }
-  .navbar .navbar-nav [href="#main"]:focus {
-    color: initial; }
+.navbar {
+  margin-bottom: 0;
+  background-color: #ffffff; }
+  .navbar .navbar-header h1 {
+    font-size: 14;
+    font-size: 1.4em;
+    margin-top: 0.5rem;
+    margin-bottom: 0; }
+  .navbar .navbar-header .navbar-brand {
+    height: auto; }
+  .navbar .navbar-nav [href="#main"] {
+    color: transparent; }
+    .navbar .navbar-nav [href="#main"]:focus {
+      color: initial; }
 
 .hero {
   background-image: url("../images/hero.jpg");
