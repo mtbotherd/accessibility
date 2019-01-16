@@ -4798,4 +4798,12 @@ p {
   font-size: 12;
   font-size: 1.2em; }
 
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em; }
+  ul li:before {
+    content: "\003E \0020"; }
+
 /*# sourceMappingURL=../maps/main.css.map */
